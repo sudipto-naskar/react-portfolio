@@ -1,0 +1,68 @@
+.n-wrapper {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+    position: relative;
+}
+
+.n-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    z-index: 99;
+}
+
+.n-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.n-right {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    position: fixed;
+    right: 4rem;
+    z-index: 1;
+    backdrop-filter: blur(18px);
+}
+
+/* .n-list{
+    display: flex;
+    right: -4rem;
+}  */
+
+.n-list>ul {
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+    cursor: pointer;
+    font-weight: 550;
+
+}
+
+.n-list>ul :hover {
+    cursor: pointer;
+    color: var(--orange);
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.n-button {
+    flex: 2;
+    transition: .9s ease;
+}
+
+@media screen and (max-width: 480px) {
+    .n-list {
+        display: none;
+    }
+
+    .n-button {
+        display: none;
+    }
+}
